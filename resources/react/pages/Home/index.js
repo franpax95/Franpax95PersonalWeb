@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { AnimatedLink } from '../../components/Link';
+import { Spinner } from '../../components/Spinner';
 
 function Home() {
 
     return <div>
         HOME
-        <Link to="/work">WORK</Link>
+        <Spinner />
+        <AnimatedLink to="/work">WORK</AnimatedLink>
+        <AnimatedLink to="/work">Link to work</AnimatedLink>
     </div>
 }
 
