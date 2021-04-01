@@ -2873,6 +2873,69 @@ function App() {
 
 /***/ }),
 
+/***/ "./resources/react/components/Header/index.js":
+/*!****************************************************!*\
+  !*** ./resources/react/components/Header/index.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FadeHeader": () => (/* binding */ FadeHeader)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style */ "./resources/react/components/Header/style.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var FadeHeader = function FadeHeader(_ref) {
+  var lightSrc = _ref.lightSrc,
+      darkSrc = _ref.darkSrc;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_style__WEBPACK_IMPORTED_MODULE_1__.StyledFadeHeader, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: lightSrc,
+      alt: ""
+    })
+  });
+};
+
+/***/ }),
+
+/***/ "./resources/react/components/Header/style.js":
+/*!****************************************************!*\
+  !*** ./resources/react/components/Header/style.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StyledFadeHeader": () => (/* binding */ StyledFadeHeader)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_theming__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-theming */ "./node_modules/styled-theming/index.js");
+/* harmony import */ var styled_theming__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_theming__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _states__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../states */ "./resources/react/states/index.js");
+/* harmony import */ var _styles_vars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/vars */ "./resources/react/styles/vars.js");
+/* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/index */ "./resources/react/utils/index.js");
+var _theme, _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var boxShadow = styled_theming__WEBPACK_IMPORTED_MODULE_0___default()('mode', (_theme = {}, _defineProperty(_theme, _states__WEBPACK_IMPORTED_MODULE_1__.THEME.LIGHT, "inset 0px -10px 10px 10px ".concat((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.addOpacityToColor)(_styles_vars__WEBPACK_IMPORTED_MODULE_2__.colors.white, 1))), _defineProperty(_theme, _states__WEBPACK_IMPORTED_MODULE_1__.THEME.DARK, "inset 0px -10px 10px 10px ".concat((0,_utils_index__WEBPACK_IMPORTED_MODULE_3__.addOpacityToColor)(_styles_vars__WEBPACK_IMPORTED_MODULE_2__.colors.black, 1))), _theme));
+var StyledFadeHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__.default.header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 100%;\n    height: 100vh;\n\n    display: grid;\n    place-items: center;\n\n    box-shadow: ", ";\n    -webkit-box-shadow: ", ";\n\n    & img {\n        object-fit: cover;\n        width: 100%;\n        height: 100%;\n\n        box-shadow: ", ";\n        -webkit-box-shadow: ", ";\n    }\n"])), boxShadow, boxShadow, boxShadow, boxShadow);
+
+/***/ }),
+
 /***/ "./resources/react/components/Link/index.js":
 /*!**************************************************!*\
   !*** ./resources/react/components/Link/index.js ***!
@@ -3042,7 +3105,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var color = styled_theming__WEBPACK_IMPORTED_MODULE_0___default()('mode', (_theme = {}, _defineProperty(_theme, _states__WEBPACK_IMPORTED_MODULE_1__.THEME.LIGHT, _styles_vars__WEBPACK_IMPORTED_MODULE_2__.colors.black), _defineProperty(_theme, _states__WEBPACK_IMPORTED_MODULE_1__.THEME.DARK, _styles_vars__WEBPACK_IMPORTED_MODULE_2__.colors.white), _theme));
-var StyledSpinner = styled_components__WEBPACK_IMPORTED_MODULE_3__.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: inline-block;\n    position: relative;\n    width: 80px;\n    height: 80px;\n    \n    & div {\n        position: absolute;\n        border-style: solid;\n        border-width: 4px;\n        border-color: ", ";\n        opacity: 1;\n        border-radius: 50%;\n        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n        transition: border-color .2s;\n    }\n\n    & div:nth-child(2) {\n        animation-delay: -0.5s;\n    }\n\n    @keyframes lds-ripple {\n        0% {\n            top: 36px;\n            left: 36px;\n            width: 0;\n            height: 0;\n            opacity: 1;\n        }\n        100% {\n            top: 0px;\n            left: 0px;\n            width: 72px;\n            height: 72px;\n            opacity: 0;\n        }\n    }\n\n"])), color);
+var StyledSpinner = styled_components__WEBPACK_IMPORTED_MODULE_3__.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: inline-block;\n    position: relative;\n    width: 80px;\n    height: 80px;\n    \n    & div {\n        position: absolute;\n        border-style: solid;\n        border-width: 4px;\n        border-color: ", ";\n        opacity: 1;\n        border-radius: 50%;\n        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n        transition: border-color .2s;\n    }\n\n    & div:nth-child(2) {\n        animation-delay: -0.5s;\n    }\n\n    @keyframes lds-ripple {\n        0% {\n            top: 36px;\n            left: 36px;\n            width: 0;\n            height: 0;\n            opacity: 1;\n        }\n        100% {\n            top: 0px;\n            left: 0px;\n            width: 72px;\n            height: 72px;\n            opacity: 0;\n        }\n    }\n"])), color);
 
 /***/ }),
 
@@ -3396,97 +3459,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _hooks_useObserver__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useObserver */ "./resources/react/hooks/useObserver.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Header */ "./resources/react/components/Header/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
-
-
-var Div = function Div(_ref) {
-  var backgroundColor = _ref.backgroundColor,
-      opacity = _ref.opacity;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "lazy",
-    style: {
-      opacity: opacity,
-      backgroundColor: backgroundColor,
-      minWidth: '100vw',
-      minHeight: '100vh',
-      transition: 'opacity .5s'
-    }
-  });
-};
-
-var Div2 = function Div2(_ref2) {
-  var backgroundColor = _ref2.backgroundColor,
-      opacity = _ref2.opacity;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    style: {
-      opacity: 0,
-      backgroundColor: backgroundColor,
-      minWidth: '100vw',
-      minHeight: '100vh',
-      transition: 'opacity .5s'
-    }
-  });
-};
 
 function Work() {
-  var _useObserver = (0,_hooks_useObserver__WEBPACK_IMPORTED_MODULE_1__.default)({
-    threshold: 0.5,
-    root: null
-  }),
-      _useObserver2 = _slicedToArray(_useObserver, 3),
-      observer = _useObserver2[0],
-      setElements = _useObserver2[1],
-      entries = _useObserver2[2];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        var lazyElement = entry.target;
-        observer.unobserve(entry.target);
-        console.log(lazyElement);
-        lazyElement.style.opacity = "1";
-      }
-    });
-  }, [entries, observer]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var elms = document.querySelectorAll(".lazy");
-    setElements(elms);
-  }, [setElements]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    children: ["WORK", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/",
-      children: "HOME"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Div2, {
-      opacity: "1",
-      backgroundColor: "white"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Div, {
-      opacity: "0",
-      backgroundColor: "red"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Div, {
-      opacity: "0",
-      backgroundColor: "blue"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Div, {
-      opacity: "0",
-      backgroundColor: "green"
-    })]
+  // const [observer, setElements, entries] = useObserver({
+  //     threshold: 0.5,
+  //     root: null
+  // });
+  // useEffect(() => {
+  //     entries.forEach(entry => {
+  //         if(entry.isIntersecting) {
+  //             const lazyElement = entry.target;
+  //             observer.unobserve(entry.target);
+  //             lazyElement.style.opacity = "1";
+  //         }
+  //     });
+  // }, [entries, observer]);
+  // useEffect(() => {
+  //     const elms = document.querySelectorAll(".lazy");
+  //     setElements(elms);
+  // }, [setElements]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    style: {
+      minHeight: '200vh'
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Header__WEBPACK_IMPORTED_MODULE_2__.FadeHeader, {
+      lightSrc: "/images/Work/header-light.jpg",
+      darkSrc: "/images/Work/header-dark.jpg"
+    })
   });
 }
 

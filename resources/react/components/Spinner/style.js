@@ -42,5 +42,4 @@ export const StyledSpinner = styled.div`
             opacity: 0;
         }
     }
-
 `;
